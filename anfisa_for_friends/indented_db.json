@@ -20,6 +20,16 @@
   }
 },
 {
+  "model": "ice_cream.category",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "title": "YaXo",
+    "slug": "yaxo2",
+    "output_order": 100
+  }
+},
+{
   "model": "ice_cream.topping",
   "pk": 1,
   "fields": {
@@ -121,9 +131,9 @@
     "is_published": true,
     "title": "Золотое мороженое",
     "description": "Шарики таитянского ванильного мороженого, шоколад “Amedei Porcelana” и груда экзотических фруктов. Всё это покрыто золотой фольгой, её тоже полагается съесть.",
+    "is_on_main": true,
     "wrapper": 3,
     "category": 1,
-    "is_on_main": true,
     "toppings": [
       1
     ]
@@ -136,9 +146,9 @@
     "is_published": true,
     "title": "Готическое мороженое",
     "description": "Чёрное мороженое в чёрном вафельном рожке для true black goths. Состав: сливочное мороженое, миндаль, активированный уголь, чернота, мрак, отрицание.",
+    "is_on_main": false,
     "wrapper": null,
     "category": 1,
-    "is_on_main": false,
     "toppings": [
       3,
       5
@@ -152,9 +162,9 @@
     "is_published": true,
     "title": "Мороженое паста карбонара",
     "description": "Порция макарон под тёмным соусом. Паста — из ванильного мороженого, продавленного через пресс с дырочками, соус — ликёр с орехами. Buon appetito!",
+    "is_on_main": false,
     "wrapper": null,
     "category": 1,
-    "is_on_main": false,
     "toppings": [
       3,
       6,
@@ -169,9 +179,9 @@
     "is_published": true,
     "title": "Люминесцентное мороженое",
     "description": "Сливочное мороженое с белками, активированными кальцием. Светится, если облизнуть. Можно подавать в тыкве на Хэллоуин или кормить собаку Баскервилей.",
+    "is_on_main": true,
     "wrapper": 2,
     "category": 1,
-    "is_on_main": true,
     "toppings": [
       2
     ]
@@ -184,9 +194,9 @@
     "is_published": true,
     "title": "Жареное мороженое",
     "description": "Шарики мороженого обваливают яйце и в панировке, сильно замораживают и быстро обжаривают в растительном масле. Едят быстро.",
+    "is_on_main": false,
     "wrapper": null,
     "category": 1,
-    "is_on_main": false,
     "toppings": [
       2,
       3,
@@ -203,9 +213,9 @@
     "is_published": true,
     "title": "Луковое мороженое",
     "description": "Обжаренный на оливковом масле лук, сахар, молоко, сливки, яйцо и ванилин — нет, это не добавка к бифштексу, а отличное лакомство.",
+    "is_on_main": false,
     "wrapper": null,
     "category": 1,
-    "is_on_main": false,
     "toppings": [
       6
     ]
@@ -218,9 +228,9 @@
     "is_published": true,
     "title": "Морской коктейль",
     "description": "Мороженое как мороженое, но в составе — водоросли и икра морской рыбы. Многим нравится.",
+    "is_on_main": false,
     "wrapper": null,
     "category": 1,
-    "is_on_main": false,
     "toppings": [
       2
     ]
@@ -233,9 +243,9 @@
     "is_published": true,
     "title": "Томатное мороженое",
     "description": "В СССР делали и томатное мороженое тоже. Вкус специфический.",
+    "is_on_main": true,
     "wrapper": 1,
     "category": 2,
-    "is_on_main": true,
     "toppings": [
       1
     ]
@@ -248,9 +258,9 @@
     "is_published": true,
     "title": "Фруктово-ягодное мороженое",
     "description": "Сырьё: сливки, пахта, фрукты и ягоды в свежем виде, яичный порошок из куриных яиц, патока карамельная. Общее количество микробов в 1 мл мороженого: не более 250 тыс.",
+    "is_on_main": false,
     "wrapper": null,
     "category": 2,
-    "is_on_main": false,
     "toppings": [
       3
     ]
@@ -263,9 +273,9 @@
     "is_published": true,
     "title": "Эскимо",
     "description": "Неустаревающая классика: мороженое на палочке, с шоколадной глазурью. Это мороженое-квест: съесть и не уронить!",
+    "is_on_main": true,
     "wrapper": null,
     "category": 2,
-    "is_on_main": true,
     "toppings": [
       4,
       6
@@ -279,9 +289,9 @@
     "is_published": true,
     "title": "Классический пломбир",
     "description": "Настоящее мороженое, для истинных ценителей вкуса. Если на столе появляется пломбир — это не надолго.",
+    "is_on_main": false,
     "wrapper": 4,
     "category": 2,
-    "is_on_main": false,
     "toppings": [
       3,
       5,
@@ -534,6 +544,45 @@
     "object_repr": "Классический пломбир",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0431\\u0451\\u0440\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-10-31T15:28:08.770Z",
+    "user": 3,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "Category object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-10-31T15:29:34.471Z",
+    "user": 3,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "Category object (3)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-10-31T15:30:37.280Z",
+    "user": 3,
+    "content_type": 1,
+    "object_id": "4",
+    "object_repr": "Category object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
@@ -915,6 +964,24 @@
   }
 },
 {
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$NnsGYN3YcDT6SZvqfMurvg$P0Sond57aEyIbndlLOmcdoDMKAeU6ZisdDugX4j8YMM=",
+    "last_login": "2023-10-31T15:16:13.528Z",
+    "is_superuser": true,
+    "username": "tolmachev",
+    "first_name": "",
+    "last_name": "",
+    "email": "tolmachevv@yandex.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-10-31T15:12:23.427Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -992,6 +1059,14 @@
   "fields": {
     "app_label": "sessions",
     "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "13kx08kw7its6hx5zhuh3d36281241ep",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQBe9CHSHxWQwp0-cMaGHZ4CTCkrErK3ePLblI2jczbxMR16XGtZc5jiSuwojL75Ywv0o7AD2xPSaZp7bMY5KHIk_a5X2i8r6d7t9BxV73mosmR8o5m9BA4IS-AGcKTN6ytoqcUoCDZx0wMQwM3gDZoPZKI4vPFwcZOHs:1qxqTV:w75H0P5G0kQTR--SJYs0b8NtWY1Gl6M1VD1cgA4ZrlU",
+    "expire_date": "2023-11-14T15:16:13.620Z"
   }
 },
 {
