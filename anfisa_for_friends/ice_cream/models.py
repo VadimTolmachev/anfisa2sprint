@@ -14,6 +14,9 @@ class Category(PublishedModel):
         verbose_name = 'Категорию'
         verbose_name_plural = 'Категории'
 
+    def __str__(self):
+        return self.title
+
 
 class Topping(PublishedModel):
     title = models.CharField(max_length=256,  verbose_name='Название')
@@ -23,6 +26,9 @@ class Topping(PublishedModel):
         verbose_name = 'Топпинг'
         verbose_name_plural = 'Топпинги'
 
+    def __str__(self):
+        return self.title
+
 
 class Wrapper(PublishedModel):
     title = models.CharField(max_length=256,  verbose_name='Название')
@@ -30,6 +36,9 @@ class Wrapper(PublishedModel):
     class Meta:
         verbose_name = 'Обёртку'
         verbose_name_plural = 'Обёртки'
+
+    def __str__(self):
+        return self.title
 
 
 class IceCream(PublishedModel):
@@ -54,3 +63,6 @@ class IceCream(PublishedModel):
     class Meta:
         verbose_name = 'Мороженое'
         verbose_name_plural = 'Мороженое'
+
+    def __str__(self):
+        return self.title
